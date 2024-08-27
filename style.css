@@ -1,0 +1,169 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color:#ffe7fb; 
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ec5ed5;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ffffff; /* Fundo branco */
+    border-radius: 12px; /* Bordas arredondadas */
+}
+.imagem-cabecalho {
+    position: absolute; /* Posicionamento absoluto */
+    left: 55px; /* Ajusta a distância da borda esquerda */
+    top: 25px; /* Ajusta a distância do topo */
+    max-width: 300px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+
+}
+
+
+
+.textarea {
+    width: 100%;
+    max-width: 800px; /* Largura maior */
+    height: 150px; /* Altura maior */
+    margin: 10px auto;
+    padding: 15px; /* Mais espaço interno */
+    font-size: 18px; /* Tamanho de fonte maior */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.textarea::placeholder {
+    color: #ffb0e1; /* Cor rosa para o texto do placeholder */
+    opacity: 1; /* Garante que o texto do placeholder seja totalmente opaco */
+}
+
+
+.button {
+    margin-top: 10px;
+    padding: 15px 30px; /* Botões maiores */
+    font-size: 18px; /* Fonte maior */
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff00d4;
+    transform: scale(1.01); /* Leve aumento de tamanho ao passar o mouse */
+}
+
+
+.button-criptografar:hover,
+.button-descriptografar:hover{
+    background-color: #ff00d4;
+}
+
+.button-criptografar {
+    background-color: #ec5ed5; /* Cor dos botões criptografar e descriptografar */
+}
+
+.button-descriptografar {
+    background-color: #ec5ed5; /* Outra cor para descriptografar */
+}
+
+.button-copiar {
+    background-color: #850f71; /* Cor de fundo do botão copiar */
+    color: #ffffff; /* Cor do texto do botão copiar */
+    border: 1px solid #850f71; /* Borda com a mesma cor de fundo */
+}
+
+.button-copiar:hover {
+    background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+    color: #850f71; /* Cor do texto ao passar o mouse */
+    border: 1px solid #850f71; /* Borda com a mesma cor do texto */
+}
+
+.container .label{
+    text-align: left;
+}
+.container p{
+    color: #714992;
+}
+
+.label {
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #333; /* Cor do texto */
+    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+    display: block; /* Exibe o rótulo em bloco para ocupar a largura total */
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.label-texto {
+    font-size: 22px; /* Tamanho maior para "Texto" */
+    color: #f70098; /* Cor verde */
+}
+
+.label-resultado {
+    font-size: 22px; /* Tamanho maior para "Resultado" */
+    color: #f70098; /* Cor rosa */
+}
+.resultado {
+    width: 100%;
+    max-width: 800px; /* Largura maior */
+    height: 150px; /* Altura maior */
+    margin: 10px auto;
+    padding: 15px; /* Mais espaço interno */
+    font-size: 18px; /* Tamanho de fonte maior */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
+}
+
+.resultado:focus {
+    border-color: #ec5ed5; /* Cor da borda ao clicar */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaço entre os botões */
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaço entre os botões */
+    
+}
+.copy-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Espaço acima do botão de copiar */
+}
+
+.container .mensagem-resultado {
+    color: #721497; /* Cor de texto para a mensagem de erro */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: none; /* Inicialmente oculta */
+}
+
+
+
+

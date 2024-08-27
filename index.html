@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Criptografia e Descriptografia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <img src="image.png" alt="Descrição da imagem" class="imagem-cabecalho">
+    <div class="container">
+        <h2>Criptografia e Descriptografia</h2>
+
+        <p><strong>Aviso:</strong> Este sistema só aceita letras minúsculas e não lida com caracteres especiais.</p>
+        
+        <label for="inputTexto" class="label label-texto">Texto</label>
+        <textarea id="inputTexto" class="textarea" placeholder="Insira o texto que você deseja criptografar ou descriptografar..."></textarea>
+        <br>
+        
+        <!-- Seleção de Tipo de Criptografia -->
+        <div class="options-container">
+            <div>
+                <input type="radio" id="alura" name="tipoCriptografia" value="substitutivo" checked>
+                <label for="alura">Alura</label>
+            </div>
+            <div>
+                <input type="radio" id="cesar" name="tipoCriptografia" value="cesar">
+                <label for="cesar">Julio César</label>
+            </div>
+        </div>
+        <br>
+        
+        <!-- Contêiner para os botões -->
+        <div class="button-container">
+            <button id="criptografarBtn" class="button button-criptografar">Criptografar</button>
+            <button id="descriptografarBtn" class="button button-descriptografar">Descriptografar</button>
+        </div>
+        <br>
+        
+        <label for="resultado" class="label label-resultado">Resultado</label>
+        <textarea id="resultado" class="textarea" readonly></textarea>
+        <p id="mensagemResultado" class="mensagem-resultado">Nenhuma mensagem encontrada</p>
+
+        <div class="copy-button-container">
+            <button id="copiarBtn" class="button button-copiar">Copiar</button>
+        </div>
+
+        
+    </div>
+</body>
+</html>
